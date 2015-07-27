@@ -1,0 +1,30 @@
+{
+  "name": "rayjun/laravel-order",
+  "description": "Order for Laravel Application.",
+  "keywords": [
+    "order",
+    "laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "rayjun",
+      "email": "rayjun0412@gmail.com"
+    }
+  ],
+  "require": {
+    "illuminate/support": "5.0.*|5.1.*",
+    "illuminate/config": "5.0.*|5.1.*",
+    "illuminate/database": "5.0.*|5.1.*",
+    "illuminate/console": "5.0.*|5.1.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Rayjun\\LaravelOrder\\": "src"
+    }
+  }
+}
