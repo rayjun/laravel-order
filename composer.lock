@@ -274,12 +274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "5db115793201700886f60c895f4024d34188deee"
+                "reference": "46914ed2aefc995b26a54bb8ea46db61d478e116"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/5db115793201700886f60c895f4024d34188deee",
-                "reference": "5db115793201700886f60c895f4024d34188deee",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/46914ed2aefc995b26a54bb8ea46db61d478e116",
+                "reference": "46914ed2aefc995b26a54bb8ea46db61d478e116",
                 "shasum": ""
             },
             "require": {
@@ -308,7 +308,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "http://laravel.com",
-            "time": "2015-07-14 01:36:14"
+            "time": "2015-07-27 13:46:23"
         },
         {
             "name": "illuminate/database",
@@ -857,12 +857,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "48bea1f4aa5fe4eb5547bb578bca39a5b2431915"
+                "reference": "df29d420311aa94ed1eb26560b573710f3603b2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/48bea1f4aa5fe4eb5547bb578bca39a5b2431915",
-                "reference": "48bea1f4aa5fe4eb5547bb578bca39a5b2431915",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/df29d420311aa94ed1eb26560b573710f3603b2d",
+                "reference": "df29d420311aa94ed1eb26560b573710f3603b2d",
                 "shasum": ""
             },
             "require": {
@@ -911,7 +911,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-07-26 09:20:10"
+            "time": "2015-07-27 14:08:10"
         },
         {
             "name": "phpunit/php-file-iterator",

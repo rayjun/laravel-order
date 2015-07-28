@@ -50,6 +50,7 @@ class Order extends Model {
 
         foreach($items as $item)
         {
+            $item->total_price = $item->count * $item->price;
             $items_number += $item->count;
             $items_total += $item->total_price;
             $item->order_id = $order->id;
@@ -57,10 +58,7 @@ class Order extends Model {
             $item->save();
         }
 
-        $order->item_number = $items_number;
-        $order->item_total = $items_total;
-
-        $order->save();
+        $this->updateOrder($order->id);
 
         return $order;
     }
@@ -72,7 +70,7 @@ class Order extends Model {
      */
     public function getOrder($order_id)
     {
-        return findOrFail($order_id);
+        return Order::findOrFail($order_id);
     }
 
 
@@ -104,15 +102,16 @@ class Order extends Model {
 
         if(! $item)
         {
-            return false;
+            return null;
         }
 
         $item->count = $qty;
+        $item->total_price = $item->price * $item->count;
         $item->save();
 
         $this->updateOrder($item->order_id);
 
-        return true;
+        return $item;
     }
 
 
@@ -176,7 +175,7 @@ class Order extends Model {
      * @param $order_id
      * @return bool
      */
-    public function delete($order_id)
+    public function deleteOrder($order_id)
     {
         $order = $this->getOrder($order_id);
 
@@ -227,7 +226,7 @@ class Order extends Model {
 
         foreach($items as $item)
         {
-            $total += $item->total_price;
+            $total += $item->count * $item->price;
         }
 
         return $total;

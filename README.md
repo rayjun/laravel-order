@@ -46,11 +46,11 @@ laravel 框架中的 order 组件。
 
 ## 删除一个订单
 
-    boolean Order::delete(int $order_id);
+    boolean Order::deleteOrder(int $order_id);
 
 ## 更新订单项数量
 
-    boolean Order::updateQty(int $item_id, int qty);
+    OrderItem Order::updateQty(int $item_id, int qty);
 
 ## 计算订单总价格
 
